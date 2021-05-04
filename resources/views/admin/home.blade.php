@@ -222,7 +222,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-menu">
                         <h2 class="footer-wid-title">User Navigation </h2>
