@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::prefix('admin')->name('admin.')->group(function (){
+Route::prefix('l-admin')->name('admin.')->group(function (){
 
     Route::get('/', function(){
         return view('admin.home');
