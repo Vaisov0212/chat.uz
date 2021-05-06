@@ -17,10 +17,16 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::prefix('l-admin')->name('admin.')->group(function (){
+Route::namespace('Admin')->middleware('auth')->name('admin.')->prefix('l-admin')->group(function (){
 
     Route::get('/', function(){
         return view('admin.home');
     });
 
+    Route::get('/pay', 'PayController@index');
+
 });
+
+Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
